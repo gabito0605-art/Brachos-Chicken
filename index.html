@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bracho's Chicken-Solo los mejores saben hacer pollo</title>
+	<meta name="descripcion" content="Somos la solución ideal para quienes buscan el mejor pollo: garantizamos la calidad superior que deseas y la velocidad de entrega que tu vida necesita.">
+	<meta property="og:title" content="Bracho's Chicken-Solo los mejores saben hacer pollo" />
+	<meta property="og:description" content="Somos la solución ideal para quienes buscan el mejor pollo: garantizamos la calidad superior que deseas y la velocidad de entrega que tu vida necesita." />
+	<meta name="keywords" content="Chicken, Bracho, Bracho's, Bracho's Chicken, Pollo, rapido, mejores, mejor, delivery, restaurante, pollo asado, comida rápida, Barquisimeto, Venezuela, comida deliciosa, familiar, almuerzos, cenas, popular, a domicilio, Catering, comida, Comida refrigerada, Combos, comodidad, Pollo frito, Pollo asado, Sabroso, calidad, confiable, higiene, frescura, entrega, velocidad, eventos, Pollo Broaster, Pollo a la Brasa, Broaster">
+	<meta name="robots" content="index, follow" />
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+
+		<button class="open-btn" onclick="toggleNav()">☰</button>
+
+<div id="mySidenav" class="sidenav">
+   <div class="closebtn" onclick="toggleNav()">&times;</div>
+  <h1 class="lateral">Menu</h1>
+  <a href='/'>Inicio</a>
+  <a href="Seccion pollos Brachos.html">Pollos</a>
+  <a href="Seccion Complementos Brachos.html">Raciones Y Complementos</a>
+  <a href="Seccion Bebidas Brachos.html">Bebidas</a>
+  <a href="Seccion Combos Brachos.html">Combos</a>
+  <a href="Seccion Refrigerada Brachos.html">Comida Refrigerada</a>
+  <a href="Seccion Catering Brachos.html">Catering</a>
+</div>
+
+		<div class="logo">
+			<img src="Brachos Chicken.png" class="logo"	alt="Brachos Chicken">
+		</div>
+
+	<nav class="encabezado">
+		<a class='nav-link' href='/'>Inicio</a>
+		<a href="Seccion pollos Brachos.html" class="nav-link">Pollos</a>
+		<a href="Seccion Complementos Brachos.html" class="nav-link">Raciones y Complementos</a>
+		<a href="Seccion Bebidas Brachos.html" class="nav-link">Bebidas</a>
+		<a href="Seccion Combos Brachos.html" class="nav-link">Combos</a>
+       
+    </nav>
+    	<div class="cart-icon" onclick="toggleCart()">
+            <img src="icons8-carrito-de-compras-32.png" alt=" Tu Carrito"> (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <div id="overlay" onclick="toggleCart()"></div>
+
+    <aside id="cart-panel">
+        <div class="close-cart" onclick="toggleCart()">&times;</div>
+        <h2>Mi Cesta</h2>
+        <ul id="cart-items">
+            </ul>
+        <div class="cart-footer">
+            <hr>
+            <h3 class="total">Total: $<span id="cart-total">0</span></h3>
+           <div class="agregar" onclick="toggleCart()"><a class='otro' href='/#Menut'>Agregar otro Producto</a></div>
+            <button class="checkout-btn" onclick="window.location.href= 'Pasarela Brachos.html'"> Realizar tu pedido </button>
+        </div>
+    </aside>
+    </header>
+	<main>
+	<section class="rojo1">
+		
+		<img src="brachos chickem.jpeg" class="poster" alt="Portada">
+		<div class="texto1">
+			<h1>Solo los Mejores Saben<br>Hacer Pollo</h1> <br>			
+			<img src="./index_files/rayita blanca.png" alt=""> <br>
+			<p class="pp">-Sabores frescos entregados directamente a tu puerta</p>
+		</div>
+		
+	</section>
+	
+	<section class="rojo2" id="rojo2">
+		
+		<center>
+			<p class="Menut" id="Menut"> MENÚ </p>
+		</center> <br>
+
+		<center><nav class="menugran">
+			<a href="Seccion pollos Brachos.html" class="Pollos"> <img src="PORTADA POLLOS BRACHOS.png" alt="Pollos"></a>
+			
+			<a href="Seccion Complementos Brachos.html" class="Pollos"> <img src="papas.jpg" alt="Raciones y Complementos"></a>
+
+			<a href="Seccion Bebidas Brachos.html" class="Pollos"> <img src="Portada Bebidas.jpg" alt="Bebidas"></a>
+			
+
+			<a href="Seccion Combos Brachos.html" class="Pollos"> <img src="Portada Combos.jpg" alt="Combos"></a>
+
+			<a href="Seccion Refrigerada Brachos.html" class="Pollos"> <img src="Portada Refrigerada.jpg" alt="Comida Refrigerada"></a>
+
+			<a href="Seccion Catering Brachos.html" class="Pollos"> <img src="Portada Catering.jpg" alt="Catering"></a>
+
+	</nav> </center>
+	<center>
+		<p class="Menut" > PIDE YA! </p></center><br>
+
+		<center><div class="minimenu">
+
+			<div class="Cont-minimenu">
+			<a href="Producto Pollo a la Broaster.html" class="pideYa" id="Pollo-broaster">
+			 <img src="Pollo-broaster.jpg" class="pide" alt="Pollo a la Broater">
+			 <p class="name-product">Pollo a la broaster</p> 
+			 <p class="precio">$8.99</p> 
+			</a>
+			  <button class="carrito" onclick="addToCart('Pollo a la Broaster', 8.99)">Añadir al Carrito </button>
+
+
+	</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Pollo a la Brasa.html" class="pideYa" id="Pollo-Brasa">
+			 <img src="Pollo-Brasa.jpg" class="pide" alt="Pollo a la Brasa">
+			 <p class="name-product">Pollo a la Brasa</p> 
+			 <p class="precio">$7.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Pollo a la Brasa', 7.99)">Añadir al Carrito</button>			 
+		
+		</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Ev-Familiares.html" class="pideYa" id="eventos-familiares">
+			 <img src="EventFamiliares.jpg" class="pide" alt="Eventos Familiares">
+			 <p class="name-product">Eventos Familiares</p> 
+			 <p class="precio">$39.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Eventos Familiares', 39.99)">Añadir al Carrito</button> 
+		
+	</div>
+		<div class="Cont-minimenu">
+			<a href="Producto Ev-Formal.html" class="pideYa" id="eventos-formales">
+			 <img src="EventFormal.jpg" class="pide" alt="Eventos Formales">
+			 <p class="name-product">Eventos Formales</p> 
+			 <p class="precio">$49.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Eventos Formales', 49.99)">Añadir al Carrito</button>			 
+		
+	</div>
+		<div class="Cont-minimenu">
+			<a href="Producto Nuggets Refrigerados.html" class="pideYa" id="nuggets">
+			 <img src="nuggets.jpg" class="pide" alt="Nuggets de Pollo refrigerados"> 
+			 <p class="name-product">Nuggets de Pollo refrigerados</p> 
+			 <p class="precio">$2.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Nuggets de pollo refrigerado ', 2.99)">Añadir al Carrito</button>			
+		
+	</div>
+		<div class="Cont-minimenu">
+			<a href="Producto Ensalada.html" class="pideYa" id="Ensalada">
+			 <img src="Ensalada.jpg" class="pide" alt="Ensalada">
+			 <p class="name-product">Ensalada</p> 
+			 <p class="precio">$1.99</p>
+			 </a> 
+			 <button class="carrito" onclick="addToCart('Ensalada', 1.99)">Añadir al Carrito</button>	 
+		
+	</div>
+
+		
+		<div class="Cont-minimenu">
+			<a href="Producto Combo2.html" class="pideYa" id="Combo2">
+			 <img src="Combo2.jpg" class="pide" alt="Combo 2">
+			 <p class="name-product">Combo 2</p> 
+			 <p class="precio">$19.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Combo 2', 19.99)">Añadir al Carrito</button>	 
+		
+	</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Cocacol2l.html" class="pideYa" id="Cocacola2l">
+			 <img src="Cocacola2l.jpg" class="pide" alt="Coca-Cola 2l">
+			 <p class="name-product">Coca-Cola 2l</p>
+			 <p class="precio">$1.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Cocaloca 2l', 1.99)">Añadir al Carrito</button>	 
+		
+	</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Cocacol1l.html" class="pideYa" id="Cocacola1l">
+			 <img src="Cocacola1l.jpg" class="pide" alt="Coca-Cola 1l">
+			 <p class="name-product">Coca-Cola 1l</p> 
+			 <p class="precio">$0.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Cocaloca 1l', 0.99)">Añadir al Carrito</button>	 
+		
+	</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Combo1.html" class="pideYa" id="Combo1">
+			 <img src="Combo1.jpg" class="pide" alt="Combo 1">	
+			 <p class="name-product">Combo 1</p>
+			 <p class="precio">$15.99</p>
+			 </a> 
+			 <button class="carrito" onclick="addToCart('Combo 1', 15.99)">Añadir al Carrito</button> 
+		
+	</div>
+
+
+
+			<div class="Cont-minimenu">
+			<a href="Producto Racion de Papas.html" class="pideYa" id="Papas">
+			 <img src="RacionPapas.jpg" class="pide" alt="Racion de Papas Fritas">
+			 <p class="name-product">Racion de Papas fritas con Salsa</p> 
+			 <p class="precio">$2.99</p> 
+			</a>
+			 <button class="carrito" onclick="addToCart('Racion de Papas Fritas Con Salsa', 2.99)">Añadir al Carrito</button>	
+		
+	</div>
+
+		<div class="Cont-minimenu">
+			<a href="Producto Racion de arepas.html" class="pideYa" id="arepitas">
+			 <img src="Racion arepas.jpg" class="pide" alt="Racion de Arepitas">
+			 <p class="name-product">Racion de Arepitas con Salsa</p> 
+			 <p class="precio">$1.99</p>
+			</a>
+			 <button class="carrito" onclick="addToCart('Racion de Arepitas Con Salsa', 1.99)">Añadir al Carrito</button> 
+		
+	</div>
+
+
+		</div></center>
+	</center>
+	</section>
+	<section class="blanco1">
+		<div class="texto3">
+			<h3>Acerca de Nosostros</h3>
+			<br><img src="rayita amarilla.png" class="rayitayellow" alt=""> <br>
+				<p>Somos la solución ideal para quienes buscan el mejor pollo:garantizamos la calidad superior que deseas y la velocidad de entrega que tu vida necesita, brindándote la máxima comodidad en cada paso.</p>
+		</div>
+		<img src="brachos chicken.jpeg" class="brachomesa" alt="">
+	</section>
+
+	<section class="rojo3" id="rojo3">
+
+		<center><p class="Menut"> SERVICIOS </p></center>
+
+		<div class="serv">
+
+		<div class="services">
+			<img src="repartidor.jpg" alt="Repartidor">
+			<p class="servicio">Entrega de Comida a Domicilio</p>
+			<p class="descripcion">Disfruta de nuestros deliciosos platillos sin salir de casa.</p>
+		</div>
+
+		<div class="services">
+			<p class="servicio">Catering</p>
+			<p class="descripcion">Organizamos la oferta gastronómica ideal para tus eventos.</p>
+			<img src="Catering.png" alt="Catering">
+		</div>
+
+		<div class="services">
+			<img src="refrigerada.png" alt="Nuggets">
+			<p  class="servicio">Venta de Comida Refrigerada</p>
+			<p class="descripcion">Calienta y disfruta, calidad garantizada cada vez.</p>
+		</div>
+	</div>
+	</section>
+
+	<section class="blanco2">
+		<center>
+		<h3>Testimonios</h3>
+		<img src="rayita amarilla.png" class="rayitayellow" alt="">
+	</center><br>
+		<div class="contTest">
+			<div class="testimonios">
+
+				<p class="testi">
+				"Su Servicio es excepcional y la calidad de la comida supera todas las expectativas"	
+				</p><br>
+				<img src="Bomba.jpg" class="serio" alt="Gomez"><br>
+				<p class="nombreTest">
+				Samuel Gomez	
+				</p>
+				<p class="descrpTest">
+				Hombre satisfecho	
+				</p><br>
+				<img src="estrellas.jpg" alt="5 estrellas">
+			</div>
+
+			<div class="testimonios">
+				<p class="testi">
+				"Usé su Catering para una reunion del trabajo y fue un gran exito.¡Altamente recomendado!"</p><br>
+				<img src="Serio.jpg" class="serio" alt="Navarro"><br>
+				<p class="nombreTest">
+				Fernando Navarro	
+				</p>
+				<p class="descrpTest">
+				Hombre Serio	
+				</p><br>
+				<img src="estrellas.jpg" alt="5 estrellas">
+			</div>
+
+			<div class="testimonios">
+				<p class="testi">
+				"Los alimentos refrigerados son deliciosos y prácticos para mi apretada agenda"	
+				</p><br>
+				<img src="Miguel.P.jpg" class="serio" alt="Pineda"><br>
+				<p class="nombreTest">
+				Miguel.P	
+				</p>
+				<p class="descrpTest">
+				Hombre Joven Ocupado	
+				</p><br>
+				<img src="estrellas.jpg" alt="5 estrellas">
+			</div>
+		</div>
+	</section>
+
+	<section class="rojo4">
+		<center><p class="Menut"> CONTACTANOS </p></center> <br><br><br>
+		<center>
+			<div class="ub">
+				<iframe title="Mapa de Barquisimeto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.550470916996!2d-69.348612!3d10.067291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e87671d783e8671%3A0x972fe1e11519c3db!2sBarquisimeto%203001%2C%20Lara%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1771178599901!5m2!1ses!2sus" width="1300" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerploicy="no-referrer-when-downgrade">	
+				</iframe>
+			</div>
+		</center>
+
+		
+		<div class="c">
+		<div class="Contmail">
+			<div class="correo">
+				<p  class="Contacto-Descrp">Correo electrónico <br>
+ 					<a href="mailto:brachoschicken@gmail.com" class="linkContacto">brachicken@gmail.com</a>
+ 				</p><br><br>
+ 				<p class="Contacto-Descrp">Informacion de Contacto<br>
+ 					<a href="tel:+584145228010" class="linkContacto">+58-04145228010</a>
+ 				</p>
+			</div>
+
+			<div class="barquisimeto">
+				<p class="Contacto-Descrp">Dirección</p>
+					<p class="Dird">Barquisimeto, Lara, Venezuela <br> 
+						operamos en todo Barquisimeto
+					</p>
+			</div>
+		</div>
+			<center>
+			<form>
+				<input type="text" name="Nombre" placeholder="Nombre" class="Nombre">
+				<input type="tel" name="Telefono"  placeholder="Telefono"   class="Nombre"><br>
+				<input type="mail" name="Direccion de Correo electrónico" placeholder="Direccion de Correo electronico" class="Correo"><br>
+				<input type="text" name="Mensaje"  placeholder="Mensaje"  class="Mensaje"><br>
+				<button type="submit" class="Bt-contacto">CONTACTO</button>
+			</form>
+		</center>
+		</div>
+		
+	</section>
+</main>
+ 
+<footer>
+	<p class="pie">				
+	Bracho`s Chicken<br>
+	Copyright © 2026 Todos los derechos reservados<br>
+	Desarrollado por Gabriel Roa
+	</p>
+
+	<nav class="paginapie">
+		<a class='nav-link' href='/'>Inicio</a>
+		<a href="Seccion pollos Brachos.html" class="nav-link">Pollos</a>
+		<a href="Seccion Complementos Brachos.html" class="nav-link-final">Raciones y Complementos</a>
+		<a href="Seccion Bebidas Brachos.html" class="nav-link-final">Bebidas</a>
+		<a href="Seccion Combos Brachos.html" class="nav-link-final">Combos</a>
+	</nav>
+</footer>
+ <div id="banner-container" class="publi" >
+    <span id="close-banner" class="x-publi">&times;</span>
+    <a href="https://majestic-parfait-2c8e58.netlify.app/" target="blank">
+    <img id="banner-img" class="banner-publi" src="" alt="Publicidad EON">
+</a>
+</div>
+	 <script src="EON.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

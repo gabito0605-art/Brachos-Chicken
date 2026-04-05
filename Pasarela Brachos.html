@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracho's Chicken-Solo los mejores saben hacer pollo</title>
+    <meta name="descripcion" content="Somos la solución ideal para quienes buscan el mejor pollo: garantizamos la calidad superior que deseas y la velocidad de entrega que tu vida necesita.">
+    <meta property="og:title" content="Bracho's Chicken-Solo los mejores saben hacer pollo" />
+    <meta property="og:description" content="Somos la solución ideal para quienes buscan el mejor pollo: garantizamos la calidad superior que deseas y la velocidad de entrega que tu vida necesita." />
+    <meta name="keywords" content="Chicken, Bracho, Bracho's, Bracho's Chicken, Pollo, rapido, mejores, mejor, delivery, restaurante, pollo asado, comida rápida, Barquisimeto, Venezuela, comida deliciosa, familiar, almuerzos, cenas, popular, a domicilio, Catering, comida, Comida refrigerada, Combos, comodidad, Pollo frito, Pollo asado, Sabroso, calidad, confiable, higiene, frescura, entrega, velocidad, eventos, Pollo Broaster, Pollo a la Brasa, Broaster">
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body class="Pasarela">
+    <header>
+
+        <button class="open-btn" onclick="toggleNav()">☰</button>
+
+<div id="mySidenav" class="sidenav">
+   <div class="closebtn" onclick="toggleNav()">&times;</div>
+  <h1 class="lateral">Menu</h1>
+  <a href="index.html">Inicio</a>
+  <a href="Seccion pollos Brachos.html">Pollos</a>
+  <a href="Seccion Complementos Brachos.html">Raciones Y Complementos</a>
+  <a href="Seccion Bebidas Brachos.html">Bebidas</a>
+  <a href="Seccion Combos Brachos.html">Combos</a>
+  <a href="Seccion Refrigerada Brachos.html">Comida Refrigerada</a>
+  <a href="Seccion Catering Brachos.html">Catering</a>
+</div>
+
+        <div class="logo">
+            <img src="Brachos Chicken.png" class="logo" alt="Brachos Chicken">
+        </div>
+
+    <nav class="encabezado">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="Seccion pollos Brachos.html" class="nav-link">Pollos</a>
+        <a href="Seccion Complementos Brachos.html" class="nav-link">Raciones y Complementos</a>
+        <a href="Seccion Bebidas Brachos.html" class="nav-link">Bebidas</a>
+        <a href="Seccion Combos Brachos.html" class="nav-link">Combos</a>
+       
+    </nav>
+        
+    </header>
+
+    <div id="overlay" onclick="toggleCart()"></div>
+
+    <aside id="cart-panel">
+        <div class="close-cart" onclick="toggleCart()">&times;</div>
+        <h2>Mi Cesta</h2>
+        <ul id="cart-items">
+            </ul>
+        <div class="cart-footer">
+            <hr>
+            <h3 class="total">Total: $<span id="cart-total">0</span></h3>
+           <div class="agregar" onclick="toggleCart()"><a href="index.html#Menut" class="otro">Agregar otro Producto</a></div>
+            <button class="checkout-btn" onclick="window.location.href= 'Pasarela Brachos.html'"> Realizar tu pedido </button>
+        </div>
+    </aside>
+    </header>
+
+    <div class="flex-container">
+         <div class="superior-placeholder" id="compra-final-movil">
+        </div>
+
+        <main class="formulario">
+            <h1 class="ped">Realiza tu Pedido</h1>
+            <form id="payment-form" method="POST">
+                <div class="form-group">
+                    <label for="card-name">Nombre y apellido</label>
+                    <input type="text" class="tex" id="card-name" placeholder="Titular de la tarjeta" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Número de Tarjeta</label>
+                    <input type="number" class="tex" id="card-number" placeholder="0000 0000 0000 0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Correo Electronico</label>
+                    <input type="mail" class="tex" id="card-name" placeholder="brachicken@gmail.com" required>
+                </div>
+                
+                <div style="display: flex; gap: 10px;"> 
+                    <div class="form-group" style="flex: 2;">
+                        <label for="dni">Cédula</label>
+                        <input type="number" class="tex" id="dni" placeholder="..." required>
+                    </div>
+
+                     <div class="form-group">
+                    <label for="card-name">Direccion</label>
+                    <input type="text" class="tex" id="card-name" placeholder="Calle/Urbansmo,Casa/Apartamento" required>
+                </div>
+            </div>
+
+
+                <div style="display: flex; gap: 10px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="country">País</label>
+                        <select id="country" required>
+                            <option value="VZ">Venezuela (+58)</option>
+                            <option value="CO">Colombia (+57)</option>
+                            <option value="USA">USA (+1)</option>
+                            <option value="CANADA">Canada (+2)</option>
+                            <option value="JAPON">Japon (+81)</option>
+                            <option value="MX">Mexico (+52)</option>
+                            <option value="ECU">Ecuador (+593)</option>
+                            <option value="PAR">Paraguay (+595)</option>
+                            <option value="ARG">Argentina (+59)</option>
+                            <option value="CH">Chile (+56)</option>
+                            <option value="ING">Inglaterra (+44)</option>
+                            <option value="Che">Republica checa (+420)</option>
+                            <option value="ESL">Eslovaquia (+421)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="flex: 1;">
+                        <label for="phone">Celular</label>
+                        <input type="number" class="ntel" id="phone" placeholder="0414-411-1144" required>
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="same-address" required>
+                    <label for="same-address">Dirección de envío y facturación</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="Pago">Pagar</button>
+            </form>
+        </main>
+
+        <div class="right-placeholder" id="compra-final">
+        </div>
+
+    </div>
+
+
+<footer>
+    <p class="pie">             
+    Bracho`s Chicken<br>
+    Copyright © 2026 Todos los derechos reservados<br>
+    Desarrollado por Gabriel Roa
+    </p>
+
+    <nav class="paginapie">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="Seccion pollos Brachos.html" class="nav-link">Pollos</a>
+        <a href="Seccion Complementos Brachos.html" class="nav-link-final">Raciones y Complementos</a>
+        <a href="Seccion Bebidas Brachos.html" class="nav-link-final">Bebidas</a>
+        <a href="Seccion Combos Brachos.html" class="nav-link-final">Combos</a>
+    </nav>
+</footer>
+
+<div class="Gracias" id="Gracias">
+    <div style="background: white; padding: 40px; border-radius: 15px; text-align: center; max-width: 400px; box-shadow: 0 5px 20px rgba(0,0,0,0.5);">
+        <img src="Brachos Chicken.png" alt="Logo" style="height: 80px; margin-bottom: 20px;">
+        <h2 style="color: #A00000; margin: 0 0 10px 0;">¡Pedido Recibido!</h2>
+        <p style="color: #333; font-size: 1.1em;">Gracias por elegir <strong>Bracho's Chicken</strong>. Tu orden se está preparando.</p>
+        <button onclick="window.location.href='index.html'" style="background: #FF0000; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 20px; width: auto;">
+            Volver al Inicio
+        </button><br><br>
+        <p class="forms">¿Tiene tiempo de responder unas preguntas para mejorar Bracho´s Chicken?</p><a href="https://docs.google.com/forms/d/e/1FAIpQLSc0UEThhMDUIMapkl7b7n-iMXDhBiTszmCuXVxMwaOEwt6J1w/viewform?usp=header" target="_blank" class="forms">de click aqui</a>
+    </div>
+
+<script src="script.js"></script>
+
+
+</div>
+</body>
+</html>
